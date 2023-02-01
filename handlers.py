@@ -12,7 +12,7 @@ with open(os.path.dirname(os.path.realpath(__file__)) + '/token.txt') as file:
 bot = Bot(TOKEN)
 dp = Dispatcher(bot)
 
-filename = 'phonebook.csv'
+filename = os.path.dirname(os.path.realpath(__file__)) + '/phonebook.csv'
 phonebook = phonebook_files.read_from_csv(filename)
 
 # Приветствие
